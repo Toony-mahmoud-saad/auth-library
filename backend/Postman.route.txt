@@ -1,0 +1,25 @@
+Authentication ===========>>>>>>>>>>>>>
+
+POST /api/auth/register - Register a new user
+
+POST /api/auth/login - Login user
+
+POST /api/auth/refresh-token - Refresh access token
+
+POST /api/auth/logout - Logout user
+
+Books ==================>>>>>>>>>>>>>
+
+GET /api/books - Get all books (public)
+
+GET /api/books/:id - Get single book (public)
+
+POST /api/books - Create new book (admin only)
+
+PUT /api/books/:id - Update book (admin only)
+
+DELETE /api/books/:id - Delete book (admin only)
+
+Users ==================>>>>>>>>>>>>>
+
+GET /api/users/profile - Get current user profile

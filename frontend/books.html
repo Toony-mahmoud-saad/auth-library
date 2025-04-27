@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books - Library System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Library</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li id="auth-links">
+                    <a href="login.html" id="login-link">Login</a>
+                    <a href="register.html" id="register-link">Register</a>
+                </li>
+                <li id="profile-link" style="display: none;">
+                    <a href="profile.html">Profile</a>
+                </li>
+                <li id="admin-link" style="display: none;">
+                    <a href="admin.html">Admin</a>
+                </li>
+                <li id="logout-link" style="display: none;" onclick="logout()">
+                    <a href="#" id="logout-btn">Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="books-section">
+            <h1>Our Book Collection</h1>
+            <div id="books-list" class="books-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Library System. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"  type="module"></script>
+    <script src="js/books.js"></script>
+</body>
+</html>

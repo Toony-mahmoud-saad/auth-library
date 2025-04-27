@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Library System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Library</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li id="profile-link">
+                    <a href="profile.html">Profile</a>
+                </li>
+                <li id="admin-link">
+                    <a href="admin.html">Admin</a>
+                </li>
+                <li id="logout-link" onclick="logout()">
+                    <a href="#" id="logout-btn">Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="admin-section">
+            <h1>Admin Panel</h1>
+            
+            <div class="admin-actions">
+                <h2>Add New Book</h2>
+                <form id="add-book-form">
+                    <div class="form-group">
+                        <label for="book-title">Title</label>
+                        <input type="text" id="book-title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="book-author">Author</label>
+                        <input type="text" id="book-author" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="book-description">Description</label>
+                        <textarea id="book-description" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="book-year">Published Year</label>
+                        <input type="number" id="book-year">
+                    </div>
+                    <div class="form-group">
+                        <label for="book-isbn">ISBN</label>
+                        <input type="text" id="book-isbn" required>
+                    </div>
+                    <button type="submit" class="btn">Add Book</button>
+                </form>
+            </div>
+
+            <div class="books-management">
+                <h2>Manage Books</h2>
+                <div id="admin-books-list" class="books-grid"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"  type="module"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>
